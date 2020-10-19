@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Single Page Application</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!--this is a font awsome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="spa.css">
+
+    <!--  -->
+</head>
+<body>
+    <main>
+        <div class="page active" id="allSongs">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" data-target="allSongs" class="nav-link oi oi-home">All Songs</a></li>
+                    <li><a href="#" data-target="likedSongs" class="nav-link">Liked Songs</a></li>
+                    <!--<li><a href="#" data-target="detail" class="nav-link">Detail</a></li>-->
+                </ul>
+            </div>
+            <div class="main-area">
+                <h1>All Songs</h1>
+                <p1>List of songs here
+
+                </p1>
+                <!--this is the song list with the songs-->
+                <div class="container">
+                    <div class="songList">
+                      <div class="line"></div>
+                    </div>
+                    <input type="file" accept=".mp3, .wav, audio/*" id="real-upload" onchange="loadFile(event)" hidden="hidden"/>
+                              <button onclick="addNewSong()"id="addSongBtn">ADD SONG +</button>
+                    
+                  </div>
+
+            </div>
+            
+        </div>
+         <div class="page" id="likedSongs"> 
+            <div class="nav">
+                <ul>
+                    <li><a href="#" data-target="allSongs" class="nav-link">All Songs</a></li>
+                    <li><a href="#" data-target="likedSongs" class="nav-link">Liked Songs</a></li>
+                    <!--<li><a href="#" data-target="detail" class="nav-link">Detail</a></li>-->
+                </ul>
+            </div>
+            <div class="main-area">
+                <h1>Liked Songs</h1>
+                <hp>List content here</hp>
+                <div class="container">
+                    <div class="songList">
+                      <div class="line"></div>
+                    </div>
+               
+                             
+                    
+                  </div>
+         </div>
+
+
+            </div>
+        </div>
+        <!--
+        <div class="page" id="detail">
+            <div class="nav">
+            
+                <ul>
+                    <li><a href="#" data-target="allSongs" class="nav-link">All Songs</a></li>
+                    <li><a href="#" data-target="likedSong" class="nav-link">Liked Songs</a></li>
+                    <li><a href="#" data-target="detail" class="nav-link">Detail</a></li>
+                </ul>
+            </div>
+            <div class="main-area">
+                <h1>Detail</h1>
+                <p1>Detail content here</p1>
+            </div>
+        </div> 
+
+-->
+<i class="fa fa-heart" aria-hidden="true"></i>
+    </main>   
+    
+    <script src="spa.js"></script>  
+</body>
+</html>
+<i class="fa fa-heart" aria-hidden="true"></i>
